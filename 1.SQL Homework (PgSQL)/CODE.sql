@@ -16,7 +16,7 @@ create role Analyst
 
 grant select on Employee_View to Analyst
 
---G1_23BCS12231_PIYUSH_ARORA_SESSION1
+--G1_23BCS11978_Sarthak_SESSION1
 
 select * from Employee_View
 
@@ -24,4 +24,4 @@ update  Employee_View
 set client_name = 'piyush'
 where client_id = 2
 
---G1_23BCS12231_PIYUSH_ARORA_SESSION1
+--G1_23BCS11978_Sarthak_SESSION1
