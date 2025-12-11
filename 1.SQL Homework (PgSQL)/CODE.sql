@@ -1,0 +1,27 @@
+CREATE TABLE client_master (
+    client_id INT PRIMARY KEY,
+    client_name VARCHAR(100),
+    email VARCHAR(100)
+);
+
+INSERT INTO client_master (client_id, client_name, email) VALUES
+(1, 'Rahul Sharma', 'rahul@gmail.com'),
+(2, 'Anita Verma', 'anita@gmail.com'),
+(3, 'Karan Singh', 'karan@gmail.com');
+
+create or replace view Employee_View as 
+select * from client_master
+
+create role Analyst
+
+grant select on Employee_View to Analyst
+
+--G1_23BCS12231_PIYUSH_ARORA_SESSION1
+
+select * from Employee_View
+
+update  Employee_View 
+set client_name = 'piyush'
+where client_id = 2
+
+--G1_23BCS12231_PIYUSH_ARORA_SESSION1
